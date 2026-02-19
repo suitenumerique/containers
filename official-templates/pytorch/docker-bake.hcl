@@ -79,7 +79,7 @@ group "default" {
 target "pytorch-base" {
   context = "official-templates/pytorch"
   dockerfile = "Dockerfile"
-  platforms = ["linux/amd64"]
+  platforms = ["linux/amd64", "linux/arm64"]
 }
 
 target "pytorch-matrix" {

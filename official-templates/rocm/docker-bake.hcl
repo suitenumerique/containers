@@ -10,7 +10,7 @@ group "default" {
 target "rocm-base" {
   context = "official-templates/base"
   dockerfile = "Dockerfile"
-  platforms = ["linux/amd64"]
+  platforms = ["linux/amd64", "linux/arm64"]
   contexts = {
     scripts = "container-template"
     proxy   = "container-template/proxy"
